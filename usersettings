@@ -1,0 +1,120 @@
+{
+    "workbench.sideBar.location": "right",
+    "editor.lineNumbers": "relative",
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-p>": false,
+        "<C-b>": false,
+        "<C-w>": false,
+        "<C-j>": false,
+        "<C-S-u>": false,
+        "<C-t>": false,
+        "<C-e>": false,
+        "<C-o>": false,
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "vim.useSystemClipboard": true,
+    "editor.detectIndentation": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "bash (2)": {
+            "path": "/usr/bin/bash"
+        },
+        "rbash": {
+            "path": "/bin/rbash"
+        },
+        "sh": {
+            "path": "/bin/sh"
+        },
+        "zsh (2)": {
+            "path": "/usr/bin/zsh"
+        },
+        "fish (2)": {
+            "path": "/usr/bin/fish",
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh (2)",
+    "editor.defaultFormatter": null,
+    "workbench.activityBar.location": "bottom",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "none",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+    },
+    "workbench.editor.closeOnFileDelete": true,
+    "terminal.integrated.enablePersistentSessions": true,
+    "editor.tokenColorCustomizations": {
+        //    "comments":"#39FF14" 
+    },
+    "pylint.args": [
+        // "indent-string=\"    \""
+        "--indent-string='    '"
+    ],
+    "hediet.vscode-drawio.resizeImages": null,
+    "editor.stickyScroll.enabled": false,
+    "vim.foldfix": true,
+    "python.defaultInterpreterPath": "/home/uranus/anaconda3/envs/webscraper",
+    "errorLens.editorHoverPartsEnabled": {
+        "messageEnabled": true,
+        "sourceCodeEnabled": true
+    },
+    "errorLens.problemRangeDecorationEnabled": true,
+    "editor.minimap.size": "fit",
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.enabled": false,
+    // --- Remap d/dd to Delete Only (using black hole register "_) ---
+    "vim.leader": "<space>",
+    "vim.highlightedyank.duration": 300,
+    "vim.highlightedyank.enable": true,
+    "explorer.confirmDelete": false,
+    "python.analysis.typeCheckingMode": "standard",
+    "workbench.iconTheme": "ayu",
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/*.pdf": true,
+        "**/*.json": true,
+        "**/*.PDF": true,
+    },
+    "workbench.colorTheme": "Mayukai Mirage Gruvbox Darktooth",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "explorer.confirmDragAndDrop": false,
+    "jupyter.askForKernelRestart": false,
+    "excalidraw.theme": "dark",
+    "r.rterm.linux": "/home/uranus/.local/bin/radian",
+    "r.plot.useHttpgd": true,
+    "r.bracketedPaste": true,
+    "r.sessionWatcher": true,
+    "editor.formatOnSave": true,
+    "r.alwaysUseActiveTerminal": true
+}
