@@ -1,0 +1,169 @@
+{
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-p>": false,
+        "<C-j>": false,
+        "<C-b>": false,
+        "<C-w>": false,
+        "<C-k>": false,
+        "<C-c>": false,
+        "<C-v>": false,
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "telemetry.telemetryLevel": "off",
+    "window.customTitleBarVisibility": "auto",
+    "window.newWindowProfile": "me 1",
+    "keyboard.dispatch": "keyCode",
+    "window.titleBarStyle": "custom",
+    "terminal.integrated.inheritEnv": false,
+    "workbench.settings.applyToAllProfiles": [
+        "workbench.colorCustomizations"
+    ],
+    "workbench.colorCustomizations": {
+        "terminal.background": "#00000000",
+        // Make the background for the word under cursor more transparent
+        "editor.wordHighlightBackground": "#88888835", // Semi-transparent grey
+        "editor.wordHighlightStrongBackground": "#AAAAAA45" // 
+        // "editor.wordHighlightStrongBorder": "#ffffff30"
+    },
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "isort.args": [
+            "--profile",
+            "black"
+        ],
+    },
+    // Define leader key (e.g., Space)
+    // --- VIM KEYBINDINGS ---
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "d",
+                "d"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "C-d",
+            ],
+            "after": [
+                "C-d",
+                "z",
+                "z",
+            ]
+        },
+        {
+            "before": [
+                "C-u"
+            ],
+            "after": [
+                "C-u",
+                "z",
+                "z",
+            ]
+        },
+        {
+            "before": [
+                "Y"
+            ],
+            "after": [
+                "y",
+                "g",
+                "_",
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // --- Your existing visual delete mapping ---
+        {
+            "before": [
+                "C-d",
+            ],
+            "after": [
+                "C-d",
+                "z",
+                "z",
+            ]
+        },
+        {
+            "before": [
+                "C-u"
+            ],
+            "after": [
+                "C-u",
+                "z",
+                "z",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d"
+            ]
+        },
+        // --- NEW: Alternate keys for ORIGINAL visual paste behavior ---
+        {
+            // Make <leader>p perform the original visual paste (overwrites register)
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d",
+                "P"
+            ]
+        },
+        {
+            "before": [
+                "Y"
+            ],
+            "after": [
+                "y",
+                "g",
+                "_",
+            ]
+        },
+        {
+            // Make <leader>P perform the original visual paste (overwrites register)
+            "before": [
+                "<leader>",
+                "P"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d",
+                "P"
+            ]
+        }
+    ],
+}
